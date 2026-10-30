@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Dex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">INFINITE<span>DEX</span></div>
+    <p>Pokémon Infinite Horizons Encyclopedia</p>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <h1>Pokédex</h1>
+        <p>Discover the world of Pokémon.</p>
+        <div class="stats">
+            <div>
+                <strong id="totalPokemon">0</strong>
+                <small>Pokémon</small>
+            </div>
+            <div>
+                <strong>50</strong>
+                <small>Elements</small>
+            </div>
+            <div>
+                <strong id="totalRegistered">0</strong>
+                <small>Registered</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Pokémon..."
+        >
+
+        <select id="typeFilter">
+            <option value="all">All Elements</option>
+        </select>
+
+        <select id="rankFilter">
+            <option value="all">All Ranks</option>
+            <option value="Normal">Normal</option>
+            <option value="Ancient">Ancient</option>
+            <option value="Omega">Omega</option>
+            <option value="Abyssal">Abyssal</option>
+            <option value="Secret God">Secret God</option>
+        </select>
+    </section>
+
+    <section>
+        <div class="section-title">
+            <h2>Pokémon Database</h2>
+            <span id="resultCount">0 Results</span>
+        </div>
+
+        <div class="pokemon-grid" id="pokemonGrid"></div>
+    </section>
+
+    <section class="detail-section" id="detailSection">
+        <button id="closeDetail">✕ Close</button>
+
+        <div id="pokemonDetail"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>INFINITE DEX © 2026</p>
+    <small>Pokémon Infinite Horizons</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
